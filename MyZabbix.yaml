@@ -86,10 +86,6 @@ networks:
     ipam:
       driver: "${DATABASE_NETWORK_DRIVER}"
 
-volumes:
-  snmptraps:
-#  dbsocket:
-
 secrets:
   MYSQL_USER:
     file: ${ENV_VARS_DIRECTORY}/.MYSQL_USER
