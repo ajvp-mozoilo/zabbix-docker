@@ -34,14 +34,6 @@ services:
   labels:
    com.zabbix.os: "${ALPINE_OS_TAG}"
 
-  zabbix-snmptraps:
-  extends:
-   file: compose_zabbix_components.yaml
-   service: zabbix-snmptraps
-  image: "${ZABBIX_SNMPTRAPS_IMAGE}:${ZABBIX_ALPINE_IMAGE_TAG}${ZABBIX_IMAGE_TAG_POSTFIX}"
-  labels:
-   com.zabbix.os: "${ALPINE_OS_TAG}"
-
  zabbix-web-service:
   extends:
    file: compose_zabbix_components.yaml
